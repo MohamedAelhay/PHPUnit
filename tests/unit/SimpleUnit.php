@@ -40,4 +40,8 @@ class SimpleUnit extends PHPUnit\Framework\TestCase
     public function test_check_name_from_constructor_def(){
         $this->assertEquals($this->user2->name, Null);
     }
+
+//    public function teardown(){
+//        $this->user->delete();
+//    }
 }
