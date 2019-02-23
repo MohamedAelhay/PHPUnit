@@ -25,4 +25,12 @@ class User
             $this->email = $email;
         }
     }
+
+    public function get_email($email = FALSE)
+    {
+        if($email){
+            $this->email = $email;
+        }
+        return $this->email;
+    }
 }

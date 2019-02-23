@@ -41,6 +41,14 @@ class SimpleUnit extends PHPUnit\Framework\TestCase
         $this->assertEquals($this->user2->name, Null);
     }
 
+    public function test_check_get_email(){
+        $this->assertEquals($this->user->get_email(), "a@b.com");
+    }
+
+    public function test_check_get_email_with_value(){
+        $this->assertEquals($this->user->get_email("Mohamed@gmail.com"), "Mohamed@gmail.com");
+    }
+
 //    public function teardown(){
 //        $this->user->delete();
 //    }
